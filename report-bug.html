@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Report a New Bug - Bug Tracking System</title>
+</head>
+<body>
+    <header>
+        <h1>Report a New Bug</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="main-page.html">Back to Main Page</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form id="report-bug-form">
+            <label for="project-name">Project Name:</label>
+            <select id="project-name" name="project-name" required>
+                <!-- Populate project names dynamically based on user's assigned projects -->
+                <option value="Project 1">Project 1</option>
+                <option value="Project 2">Project 2</option>
+                <!-- Add more project options as needed -->
+            </select>
+            <label for="bug-title">Bug Title:</label>
+            <input type="text" id="bug-title" name="bug-title" required>
+            <label for="bug-description">Description:</label>
+            <textarea id="bug-description" name="bug-description" required></textarea>
+            <label for="severity-level">Severity Level:</label>
+            <select id="severity-level" name="severity-level" required>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+            <button type="submit">Report Bug</button>
+        </form>
+    </main>
+</body>
+</html>
